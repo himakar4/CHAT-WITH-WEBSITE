@@ -1,0 +1,2 @@
+# Chat with Websites from URL - LangChain Chatbot using Groq AI with Streamlit GUI
+Welcome to the GitHub repository for the LangChain Chatbot using Groq AI with Streamlit GUI! This project is a comprehensive guide to building a chatbot capable of interacting with websites, extracting information, and communicating in a user-friendly manner. It leverages the power of LangChain and integrates it with a Streamlit GUI for an enhanced user experience. The Groq API keys are free to use and for generating embeddings Pinecone also offers limited usage of its resources.
