@@ -17,7 +17,7 @@ PINECONE_API_KEY = os.environ.get("PINECONE_API_KEY")
 GROQ_API_KEY = os.environ.get("GROQ_API_KEY")
 
 async def initialize_model():
-    model = PineconeEmbeddings(model="multilingual-e5-large", api_key=PINECONE_API_KEY)
+    model = PineconeEmbeddings(model="multilingual-e5-large",pinecone_api_key=PINECONE_API_KEY)
     return model
 
 def get_vectorstore_from_url(url,model):
@@ -100,7 +100,7 @@ else :
     ]
     if "vector_store" not in st.session_state:
         # Initialize model asynchronously
-        model = initialize_model()
+        model = asyncio.run(initialize_model())
         st.session_state.vector_store = get_vectorstore_from_url(website_url, model)
 
 
