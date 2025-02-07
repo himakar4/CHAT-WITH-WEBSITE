@@ -1,0 +1,9 @@
+langchain-groq
+langchain-pinecone
+streamlit==1.38.0
+beautifulsoup4==4.12.3
+chromadb==0.4.24
+python-dotenv==1.0.1
+langchain
+langchain_community
+langchain_core
