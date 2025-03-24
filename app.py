@@ -43,7 +43,7 @@ async def get_vectorstore_from_url(url,model):
 
 
 def get_context_retriever_chain(vector_store):
-    llm = ChatGroq(model="mixtral-8x7b-32768")
+    llm = ChatGroq(model="llama-3.3-70b-specdec")
 
     retriever = vector_store.as_retriever()
 
