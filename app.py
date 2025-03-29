@@ -59,7 +59,7 @@ def get_context_retriever_chain(vector_store):
 
 
 def get_conversational_rag(retriever_chain):
-    llm = ChatGroq(model="mixtral-8x7b-32768")
+    llm = ChatGroq(model="llama-3.3-70b-specdec")
 
     prompt = ChatPromptTemplate.from_messages([
         ("system","Answer the users request based on the below context:\n\n {context}"),
