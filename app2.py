@@ -42,7 +42,7 @@ async def get_vectorstore_from_url(url,model):
 
 
 def get_context_retriever_chain(vector_store):
-    llm = ChatGroq(model="llama-3.3-70b-specdec")
+    llm = ChatGroq(model="llama3-70b-8192")
 
     retriever = vector_store.as_retriever()
 
@@ -58,7 +58,7 @@ def get_context_retriever_chain(vector_store):
 
 
 def get_conversational_rag(retriever_chain):
-    llm = ChatGroq(model="llama-3.3-70b-specdec")
+    llm = ChatGroq(model="llama3-70b-8192")
 
     prompt = ChatPromptTemplate.from_messages([
         ("system","Answer the users request based on the below context:\n\n {context}"),
