@@ -7,3 +7,4 @@ python-dotenv==1.0.1
 langchain
 langchain_community
 langchain_core
+numpy<2.0.0
